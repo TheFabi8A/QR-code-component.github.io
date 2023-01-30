@@ -18,6 +18,9 @@ body {
     background-color: var(--background);
     margin: 17.5px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 :root {
@@ -31,7 +34,8 @@ body {
 }
 
 .container-absolute {
-    height: 100vh;
+    max-width: 375px;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
