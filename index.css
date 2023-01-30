@@ -1,62 +1,76 @@
 @font-face {
     font-family: Outfit;
-    src: url("fonts/Outfit-Regular.ttf")format(truetype);
+    src: url("fonts/Outfit-Regular.ttf") format(truetype);
 }
+
 @font-face {
     font-family: Outfit-bold;
-    src: url("fonts/Outfit-Bold.ttf")format(truetype);
+    src: url("fonts/Outfit-Bold.ttf") format(truetype);
 }
 
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --white:hsl(0,0%,100%);
-    --light-gray:hsl(212, 45%, 89%);
-    --grayish-blue:hsl(220, 15%, 55%);
-    --dark-blue:hsl(218, 44%, 22%);
+body {
+    background-color: var(--background);
+    margin: 17.5px;
+    font-size: 16px;
 }
 
-body{
-    background-color: #333;
+:root {
+    --white: rgb(255 255 255);
+    --light-gray: rgb(214 226 240);
+    --grayish-blue: rgb(123 135 157);
+    --dark-blue: rgb(31 50 81);
+    --background: rgb(213 225 239);
+    --font-bold: outfit-bold, sans-serif;
+    --font: outfit;
 }
-.container-absolute{
-    width: 100vw;
+
+.container-absolute {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
-.card-container{
+
+.card-container {
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    height: 354px;
-    width: 220px;
+    width: 350px;
+    padding: 15px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.title{
-    font-size: 15px;
-    font-family: Outfit-bold;
+.title {
+    font-size: 1.4em;
+    font-family: var(--font-bold);
+    padding: 20px 0;
 }
-.paragraph{
-    font-size: 15px;
-    color: var(--light-gray);
-    font-family: Outfit;
+
+.paragraph {
+    padding-bottom: 15px;
+    font-size: 1em;
+    color: var(--grayish-blue);
+    font-family: var(--font);
 }
-.title,.paragraph{
-    padding: 0 10px;
+
+.title,
+.paragraph {
+    width: 270px;
     text-align: center;
 }
 
-.img{
-    overflow: inherit;
+.img {
+    width: 100%;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    overflow: hidden;
 }
