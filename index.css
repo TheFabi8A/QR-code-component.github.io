@@ -22,11 +22,11 @@
 
 body {
     background-color: var(--background);
-    margin: 17.5px;
     font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 :root {
@@ -39,16 +39,9 @@ body {
     --font: outfit;
 }
 
-.container-absolute {
-    max-width: 375px;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
 .card-container {
+    margin: 0 30px;
+    max-width: 350px;
     background-color: var(--white);
     border-radius: 20px;
     overflow: hidden;
@@ -57,6 +50,10 @@ body {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.container-text {
+    padding: 0 15px;
 }
 
 .title {
@@ -74,7 +71,6 @@ body {
 
 .title,
 .paragraph {
-    width: 265px;
     text-align: center;
 }
 
